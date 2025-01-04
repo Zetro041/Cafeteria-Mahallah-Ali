@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahallah Ali Cafeteria</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
+  </head>
+  <!-- betullkan header nnti tak responsive -->
+  <body>
     <div class="sidebar">
-        <div class="logo">
-            <img src="/image/Logo.png" alt="Logo">
-        </div>
-        <div class="tagline">FOOD OVER YOU</div>
+      <div class="logo">
+        <img src="/image/Logo.png" alt="Logo" />
+      </div>
+      <div class="tagline">FOOD OVER YOU</div>
     </div>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#customer-reviews">Customer Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Customer Reviews</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section id="home" class="about">
-            <h1>Mahallah Ali Cafeteria</h1>
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>
-                    Currently managing a cafeteria in International Islamic University Malaysia, Gombak. Wide range of food from traditional Malay cuisine to Indonesian cuisine, street burgers and roti johns, pizzas, in-house subway sandwiches, irresistible fruit juice, and more.
-                </p>
-            </div>
-            <div class="about-text">
-                <h2>Opening Hours</h2>
-                <p>
-                    Everyday<br>7:30 AM - 11:00 PM
-                </p>
-            </div>
-            <div class="about-text">
-                <h2>Location</h2>
-                <p>
-                    Mahallah Ali, IIUM<br>53100 Kuala Lumpur
-                </p>
-            </div>
-        </section>
+      <section id="home" class="about">
+        <!-- Title above the grid -->
+        <h1 class="title">
+          <span class="highlight">MAHALLAH ALI</span><br />
+          CAFETERIA
+        </h1>
+        <!-- Grid layout -->
+        <div class="about-grid">
+          <!-- Left Most Side -->
+          <div class="about-text about-us">
+            <h2>About Us</h2>
+            <p>
+              Currently managing a cafeteria in International Islamic University
+              Malaysia, Gombak. Wide range of food from traditional Malay
+              cuisine to Indonesian cuisine, street burgers and roti johns,
+              pizzas, in-house subway sandwiches, irresistible fruit juice, and
+              more.
+            </p>
+          </div>
+          <!-- Opening Hours -->
+          <div class="about-text opening-hours">
+            <h2>Opening Hours</h2>
+            <p>Everyday<br />7:30 AM - 11:00 PM</p>
+          </div>
+          <!-- Location -->
+          <div class="about-text location">
+            <h2>Location</h2>
+            <p>Mahallah Ali, IIUM<br />53100 Kuala Lumpur</p>
+          </div>
+          <!-- Right Food Image -->
+          <div class="about-images">
+            <img src="/image/food-placeholder.jpg" alt="Delicious Food" />
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <footer class="footer">
+      &copy; 2024 Mahallah Ali Cafeteria | All Rights Reserved
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
