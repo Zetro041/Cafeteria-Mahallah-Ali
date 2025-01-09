@@ -11,13 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="LC-Lightbox-LITE-master\LC-Lightbox-LITE-master\css\lc_lightbox.min.css" />
+    <link rel="stylesheet" href="LC-Lightbox-LITE-master\LC-Lightbox-LITE-master\skins\minimal.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-  <!-- betullkan header nnti tak responsive -->
-  <body>
+  <body class="gallery-page">
     <div class="sidebar">
       <div class="logo">
-        <img src="/image/Logo.png" alt="Logo" />
+        <img src="/src/Logo.png" alt="Logo" />
       </div>
       <div class="tagline">FOOD OVER YOU</div>
     </div>
@@ -33,11 +34,45 @@
       </nav>
     </header>
     <main>
-
+      <section id="gallery-section">
+        <h1 id="gallery-title">
+          <span class="highlight">GALLERY</span>
+        </h1>
+        <div id="lcl_elems_wrapper">
+          <a
+            href="/src/image/image1.jpg"
+            title="Image 1 Title"
+            data-lcl-txt="Image 1 description"
+            data-lcl-author="Image 1 author"
+          >
+            <img src="/src/image/imagesmall1.jpg" alt="Gallery Image 1" />
+          </a>
+          <a
+            href="/src/image/image2.jpg"
+            title="Image 2 Title"
+            data-lcl-txt="Image 2 description"
+            data-lcl-author="Image 2 author"
+          >
+            <img src="/src/image/imagesmall2.jpg" alt="Gallery Image 2" />
+          </a>
+          <a
+            href="/src/image/image3.jpg"
+            title="Image 2 Title"
+            data-lcl-txt="Image 2 description"
+            data-lcl-author="Image 2 author"
+          >
+            <img src="/src/image/imagesmall3.jpg" alt="Gallery Image 2" />
+          </a>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        &copy; 2024 Mahallah Ali Cafeteria | All Rights Reserved
-      </footer>
+      &copy; 2024 Mahallah Ali Cafeteria | All Rights Reserved
+    </footer>
     <script src="script.js"></script>
+    <script
+      src="LC-Lightbox-LITE-master\LC-Lightbox-LITE-master\js\lc_lightbox.lite.min.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>
