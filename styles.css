@@ -204,6 +204,50 @@ main {
     border-top: 2px solid #D19F0E; /* Adds a border for styling */
 }
 
+body.gallery-page main {
+    margin-left: 80px;
+    padding: 70px 20px 20px; /* Extra top padding specific to the gallery */
+    background: #d19f0e;
+  }
+  
+  #gallery-section h1 {
+    font-family: 'Keania One', serif;
+    font-size: 36px;
+    color: #ffffff; /*class ni cam tak pakai*/
+    text-align: left;
+  }
+  
+  #gallery-section h1 .highlight {
+    color: #ffffff; /* Highlighted text color */
+    font-weight: bold;
+    letter-spacing: 30px;
+    font-family: 'Keania One', serif;
+  }
+
+/* Fix for gallery positioning */
+#lcl_elems_wrapper {
+    margin-top: 10px; /* Add margin to push it below the header */
+    display: flex; /* Optional: Make gallery items align properly */
+    gap: 20px; /* Space between images */
+    flex-wrap: wrap; /* Ensure images wrap if they exceed available space */
+    justify-content: center; /* Center the gallery items */
+    padding: 20px; /* Add padding around the gallery */
+}
+
+#lcl_elems_wrapper a {
+    display: inline-block;
+    border: 2px solid #000; /* Optional: Add border to images */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    overflow: hidden; /* Ensure image stays within bounds */
+}
+
+#lcl_elems_wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-grid {
