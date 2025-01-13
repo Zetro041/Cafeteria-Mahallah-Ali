@@ -31,10 +31,108 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="menu">
+        <h1>Menu</h1>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">Traditional Malay Cuisines</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Nasi Lemak</li>
+                <li>Nasi Goreng</li>
+                <li>Roti Canai</li>
+                <li>Mee Goreng</li>
+                <li>Nasi Kandar</li>
+                <li>Sate</li>
+                <li>Char Kuey Teow</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Western</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Chicken Chop</li>
+                <li>Burger</li>
+                <li>French Fries</li>
+                <li>Loaded Potato</li>
+                <li>Fish and Chips</li>
+                <li>Lamb Chop</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Pizzas</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Margherita</li>
+                <li>Pepperoni</li>
+                <li>BBQ Chicken</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Middle Eastern Cuisines</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Shawarma</li>
+                <li>Mandi Chicken</li>
+                <li>Kebab</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Chinese Muslim Cuisine</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Mee Tarik</li>
+                <li>Dumplings</li>
+                <li>Stir-fried vegetables</li>
+                <li>Lamb skewers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Drinks & Beverages</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Teh Tarik</li>
+                <li>Sirap Ais</li>
+                <li>Nescafe Ais</li>
+                <li>Extrajoss</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Dessert</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Apam Balik</li>
+                <li>ABC</li>
+                <li>Cendol</li>
+                <li>Pisang Goreng Cheese</li>
+                <li>Waffle</li>
+                <li>Baklava</li>
+                <li>Kunafa</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       &copy; 2024 Mahallah Ali Cafeteria | All Rights Reserved
     </footer>
-    <script src="script.js"></script>
+    <script>
+      // Accordion functionality
+      $(document).ready(function () {
+        $('.accordion-header').click(function () {
+          const content = $(this).next('.accordion-content');
+          $('.accordion-content').not(content).slideUp();
+          content.slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>
