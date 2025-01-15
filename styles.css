@@ -306,3 +306,62 @@ body.gallery-page main {
     font-size: 16px;
     margin-top: 20px;
 }
+
+  /* Menu Section */
+  .menu {
+    padding: 2rem;
+    text-align: center;
+  }
+  .menu h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+  }
+  .accordion {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .accordion-item {
+    margin-bottom: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .accordion-header {
+    background: #111;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+  }
+  .accordion-header:hover {
+    background: #ffcc00;
+  }
+  .accordion-content {
+    display: none;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  .menu-card {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+  }
+  .menu-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .menu-card img:hover {
+    transform: scale(1.1);
+  }
+  .menu-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
