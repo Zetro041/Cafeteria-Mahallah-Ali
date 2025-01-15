@@ -133,43 +133,46 @@ main {
     padding: 10px;
     text-align: left;
     margin-bottom: 20px;
-    margin-right: 194px;
+    margin-right: 20px;
 }
 
-/* About Grid */
+/* Rosak takleh nak edit*/
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns */
-    gap: 20px;
+    grid-template-columns: 1.5fr 1fr; /* Adjustable columns: Text (1.5fr), Image (1fr) */
+    gap: 20px; /* Space between text and image */
     align-items: start;
-    margin-top: 20px;
+    position: relative;
+    width: 100%; /* Ensure grid spans the full width */
+    margin: 0; /* Remove any automatic centering or spacing */
 }
 
-/* About Us */
+.about-text {
+    margin: 0;
+    padding: 10px;
+}
+
 .about-us {
-    grid-column: 1 / 3; /* Span from left most side to left side */
+    grid-column: 1 / 2; /* Place in the first column */
 }
 
-/* Opening Hours */
-.opening-hours {
-    grid-column: 1 / 3; /* Span from left most side to left side */
-}
-
-/* Location */
-.location {
-    grid-column: 1 / 3; /* Span from left most side to left side */
-}
-
-/* Food Images */
 .about-images {
-    grid-column: 3 / 5; /* Span from right to right most side */
+    grid-column: 2 / 3; /* Place in the second column */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: flex-start; /* Align to the top */
+    margin-right: -20px; /* Push the image past the grid boundary */
+    height: auto;
+    overflow: visible; /* Allow overflow beyond the grid container */
+    position: relative;
 }
 
 .about-images img {
-    width: 100%;
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto; /* Maintain natural width */
+    height: 100vh; /* Stretch to fill the viewport height */
+    object-fit: cover; /* Crop image properly */
+    max-width: none; /* Allow image to exceed container bounds */
+    position: relative;
 }
 
 /* Content Styling */
@@ -206,13 +209,13 @@ main {
 
 body.gallery-page main {
     margin-left: 80px;
-    padding: 70px 20px 20px; /* Extra top padding specific to the gallery */
+    padding: 70px 70px 20px; /* Extra top padding specific to the gallery */
     background: #d19f0e;
   }
   
   #gallery-section h1 {
     font-family: 'Keania One', serif;
-    font-size: 36px;
+    font-size: 48px;
     color: #ffffff; /*class ni cam tak pakai*/
     text-align: left;
   }
@@ -276,6 +279,13 @@ body.gallery-page main {
     margin-bottom: 20px;
 }
 
+#contacts-title .highlight {
+    color: #ffffff; /* Highlighted text color */
+    font-weight: bold;
+    letter-spacing: 30px;
+    font-family: 'Keania One', serif;
+  }
+
 .social-media-icons{
     display: flex;
     justify-content: center;
@@ -318,6 +328,42 @@ body.gallery-page main {
     margin-bottom: 1.5rem;
     color: #111;
   }
+
+  #menu-title {
+    text-align: left; /* Align the text to the left */
+    margin-top: 50px;
+    margin-left: 21px; /* Match the left margin with the rest of the layout */
+    font-family: 'Keania One', serif; /* Ensure consistent font */
+}
+
+  #menu-title .highlight {
+    color: #ffffff; /* Highlighted text color */
+    font-weight: bold;
+    letter-spacing: 30px;
+    font-size: 48px;
+    font-family: 'Keania One', serif;
+  }
+
+  .menu-card {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+  }
+  .menu-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .menu-card img:hover {
+    transform: scale(1.1);
+  }
+  .menu-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
   .accordion {
     margin: 0 auto;
     max-width: 800px;
@@ -344,24 +390,4 @@ body.gallery-page main {
     display: none;
     padding: 20px;
     background: #f9f9f9;
-  }
-  .menu-card {
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-  }
-  .menu-card img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  .menu-card img:hover {
-    transform: scale(1.1);
-  }
-  .menu-card p {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.1rem;
   }
