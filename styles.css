@@ -227,6 +227,26 @@ body.gallery-page main {
     font-family: 'Keania One', serif;
   }
 
+  #reviews-section {
+    padding: 50px 50px 20px; /* Match the padding of the gallery */
+    background: #d19f0e; /* Same background color as the gallery */
+}
+
+#reviews-section h1 {
+    font-family: 'Keania One', serif;
+    font-size: 48px;
+    color: #ffffff; /* Matches gallery style */
+    text-align: left; /* Aligns to the left like the gallery section */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+#reviews-section h1 .highlight {
+    color: #ffffff; /* Highlighted text color */
+    font-weight: bold;
+    letter-spacing: 30px; /* Spacing between letters for the highlight */
+    font-family: 'Keania One', serif; /* Consistent font styling */
+}
+
 /* Fix for gallery positioning */
 #lcl_elems_wrapper {
     margin-top: 10px; /* Add margin to push it below the header */
