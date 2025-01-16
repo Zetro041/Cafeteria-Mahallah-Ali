@@ -1,31 +1,32 @@
-# GROUP NAME: Webexpert
-## Group Member Details:
+## GROUP NAME: WebExpert
+### Group Member Details:
 
-| NAME | MATRICS NO |
-|-----:|-----------|
-|MUHAMMAD QHUDZAIREE BIN ZAINOL ABIDIN|2311963|
-|MUHAMMAD SYAHMI AIMAN BIN MOHD AMIN|2311469|
-|MUHAMMAD NAQIB BIN ROSLI|2310795|
+| NAME        | MATRICS NO |
+| :------------- |:-------------|
+| MUHAMMAD QHUDZAIREE BIN ZAINOL ABIDIN      | 2311963 |
+| MUHAMMAD SYAHMI AIMAN BIN MOHD AMIN      | 2311469      |
+| MUHAMMAD NAQIB BIN ROSLI | 2310795 |
 
 ## Assigned Tasks
-
+```
 Qhudzairee
-Project Leader
-Developed the Homepage, Gallery Page, and Customer Review Page
-Maintained CSS design
+1.Project Leader
+2.Developed the Homepage, Gallery Page, and Customer Review Page
+3.Maintained CSS design
 
 Syahmi
-Created the Contact Page and Site Map
-incorporated Islamic values
-Prepare and compile the video presentation
+1.Created the Contact Page and Site Map
+2.incorporated Islamic values
+3.Prepare and compile the video presentation
 
 Naqib
-Developed the Menu Pages
-Designed the website prototype
-Provided photography
-
+1.Developed the Menu Pages
+2.Designed the website prototype
+3.Provided photography
+```
 ## Project Description
-To design and implement an enhanced website for a food shop that meets clients’ specific needs for customer engagement and effective content presentation, based on feedback gathered through a Google Form survey
+To design and implement an enhanced website for a Cafeteria that meets clients’ specific needs 
+for customer engagement and effective content presentation, based on feedback gathered through a Google Form survey.
 
 ## Instructions to Use
 To view the website locally, follow these steps:
