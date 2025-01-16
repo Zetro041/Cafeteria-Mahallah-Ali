@@ -17,3 +17,31 @@ $(document).ready(function() {
         thumb_attr: 'data-lcl-thumb' // Attribute for thumbnails
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    // Check if the user has visited before
+    if (!sessionStorage.getItem("welcomeShown")) {
+      showModal(); // Show the modal if not visited
+      sessionStorage.setItem("welcomeShown", "true"); // Set a flag
+    }
+  });
+  
+  function showModal() {
+    const modal = document.getElementById("welcome-modal");
+    modal.style.display = "flex"; // Display the modal
+  
+    // Attach audio playback to modal interaction
+    const modalContent = modal.querySelector(".modal-content");
+    modalContent.addEventListener("click", playWelcomeAudio);
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById("welcome-modal");
+    modal.style.display = "none"; // Hide the modal
+  }
+  
+  function playWelcomeAudio() {
+    const audio = document.getElementById("welcomeAudio");
+    audio.play().catch((error) => {
+      console.log("Audio playback failed:", error);
+    });
+  }

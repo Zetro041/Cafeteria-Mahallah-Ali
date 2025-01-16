@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
@@ -18,34 +15,62 @@
       <div class="logo">
         <img src="/src/Logo.png" alt="Logo" />
       </div>
-      <div class="tagline">FOOD OVER YOU</div>
+      <div class="tagline">A TASTE OF HOME, AWAY FROM HOME</div>
     </div>
     <header>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="reviews.html">Customer Reviews</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="reviews.html">Customer Reviews</a>
+          </li>
+          <li>
+            <a href="contacts.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="menu">
-        <h1>Menu</h1>
+        <div class="title-menu">
+          <h1 id="menu-title"><!--nak samakan font jgn ubah-->
+          <span class="highlight">MENU</span>
+          </h1>
+        </div>
         <div class="accordion">
           <div class="accordion-item">
             <button class="accordion-header">Traditional Malay Cuisines</button>
             <div class="accordion-content">
               <ul>
-                <li>Nasi Lemak</li>
-                <li>Nasi Goreng</li>
-                <li>Roti Canai</li>
-                <li>Mee Goreng</li>
-                <li>Nasi Kandar</li>
-                <li>Sate</li>
-                <li>Char Kuey Teow</li>
+                <li>
+                  <img src="/src/image/Nasi Lemak.png" alt="Nasi Lemak" width="200" height="200" /> Nasi Lemak
+                </li>
+                <li>
+                  <img src="/src/image/Nasi Goreng.png" alt="Nasi Goreng" width="200" height="200" /> Nasi Goreng
+                </li>
+                <li>
+                  <img src="/src/image/Roti Canai.png" alt="Roti Canai" width="200" height="200" /> Roti Canai
+                </li>
+                <li>
+                  <img src="/src/image/Mee Goreng.png" alt="Mee Goreng" width="200" height="200" /> Mee Goreng
+                </li>
+                <li>
+                  <img src="/src/image/Nasi Kandar.png" alt="Nasi Kandar" width="200" height="200" /> Nasi Kandar
+                </li>
+                <li>
+                  <img src="/src/image/Sate.png" alt="Sate" width="200" height="200" /> Sate
+                </li>
+                <li>
+                  <img src="/src/image/Char Kuey Teow.png" alt="Char Kuey Teow" width="200" height="200" /> Char Kuey Teow
+                </li>
               </ul>
             </div>
           </div>
@@ -53,12 +78,27 @@
             <button class="accordion-header">Western</button>
             <div class="accordion-content">
               <ul>
-                <li>Chicken Chop</li>
-                <li>Burger</li>
-                <li>French Fries</li>
-                <li>Loaded Potato</li>
-                <li>Fish and Chips</li>
-                <li>Lamb Chop</li>
+                <li>
+                  <img src="/src/image/Chicken Chop.png" alt="Chicken Chop" width="200" height="200" /> Chicken Chop
+                </li>
+                <li>
+                  <img src="/src/image/Burger.png" alt="Burger" width="200" height="200" /> Burger
+                </li>
+                <li>
+                  <img src="/src/image/French Fries.png" alt="French Fries" width="200" height="200" /> French Fries
+                </li>
+                <li>
+                  <img src="/src/image/Spaghetti Bolognese.png" alt="Spaghetti Bolognese" width="200" height="200" /> Spaghetti Bolognese
+                </li>
+                <li>
+                  <img src="/src/image/Spaghetti Carbonara.png" alt="Spaghetti Carbonara" width="200" height="200" /> Spaghetti Carbonara
+                </li>
+                <li>
+                  <img src="/src/image/Fish and Chips.png" alt="Fish and Chips" width="200" height="200" /> Fish and Chips
+                </li>
+                <li>
+                  <img src="/src/image/Lamb Chop.png" alt="Lamb Chop" width="200" height="200" /> Lamb Chop
+                </li>
               </ul>
             </div>
           </div>
@@ -66,9 +106,15 @@
             <button class="accordion-header">Pizzas</button>
             <div class="accordion-content">
               <ul>
-                <li>Margherita</li>
-                <li>Pepperoni</li>
-                <li>BBQ Chicken</li>
+                <li>
+                  <img src="/src/image/Hawaiian.png" alt="Hawaiian Chicken" width="200" height="200" /> Hawaiian Chicken
+                </li>
+                <li>
+                  <img src="/src/image/Pepperoni.png" alt="Pepperoni" width="200" height="200" /> Pepperoni
+                </li>
+                <li>
+                  <img src="/src/image/BBQ Chicken.png" alt="BBQ Chicken" width="200" height="200" /> BBQ Chicken
+                </li>
               </ul>
             </div>
           </div>
@@ -76,9 +122,15 @@
             <button class="accordion-header">Middle Eastern Cuisines</button>
             <div class="accordion-content">
               <ul>
-                <li>Shawarma</li>
-                <li>Mandi Chicken</li>
-                <li>Kebab</li>
+                <li>
+                  <img src="/src/image/Shawarma.png" alt="Shawarma" width="200" height="200" /> Shawarma
+                </li>
+                <li>
+                  <img src="/src/image/Mandi Chicken.png" alt="Mandi Chicken" width="200" height="200" /> Mandi Chicken
+                </li>
+                <li>
+                  <img src="/src/image/Kebab.png" alt="Kebab" width="200" height="200" /> Kebab
+                </li>
               </ul>
             </div>
           </div>
@@ -86,10 +138,15 @@
             <button class="accordion-header">Chinese Muslim Cuisine</button>
             <div class="accordion-content">
               <ul>
-                <li>Mee Tarik</li>
-                <li>Dumplings</li>
-                <li>Stir-fried vegetables</li>
-                <li>Lamb skewers</li>
+                <li>
+                  <img src="/src/image/Mee Tarik.png" alt="Mee Tarik" width="200" height="200" /> Mee Tarik
+                </li>
+                <li>
+                  <img src="/src/image/Dumplings.png" alt="Dumplings" width="200" height="200" /> Dumplings
+                </li>
+                <li>
+                  <img src="/src/image/Beef Roti.png" alt="Beef Roti" width="200" height="200" /> Beef Roti
+                </li>
               </ul>
             </div>
           </div>
@@ -97,10 +154,30 @@
             <button class="accordion-header">Drinks & Beverages</button>
             <div class="accordion-content">
               <ul>
-                <li>Teh Tarik</li>
-                <li>Sirap Ais</li>
-                <li>Nescafe Ais</li>
-                <li>Extrajoss</li>
+                <li>
+                  <img src="/src/image/Teh.png" alt="Teh Tarik" width="200" height="200" /> Teh Tarik
+                </li>
+                <li>
+                  <img src="/src/image/Green Tea.png" alt="Green Tea" width="200" height="200" /> Green Tea
+                </li>
+                <li>
+                  <img src="/src/image/Nescafe.png" alt="Nescafe" width="200" height="200" /> Nescafe
+                </li>
+                <li>
+                  <img src="/src/image/Milo.png" alt="Milo" width="200" height="200" /> Milo
+                </li>
+                <li>
+                  <img src="/src/image/Teh O.png" alt="Teh O" width="200" height="200" /> Teh O
+                </li>
+                <li>
+                  <img src="/src/image/Teh O Limau.png" alt="Teh O Limau" width="200" height="200" /> Teh O Limau
+                </li>
+                <li>
+                  <img src="/src/image/Limau.png" alt="Limau" width="200" height="200" /> Limau
+                </li>
+                <li>
+                  <img src="/src/image/Air Kosong.png" alt="Air Kosong" width="200" height="200" /> Air Kosong
+                </li>
               </ul>
             </div>
           </div>
@@ -108,26 +185,35 @@
             <button class="accordion-header">Dessert</button>
             <div class="accordion-content">
               <ul>
-                <li>Apam Balik</li>
-                <li>ABC</li>
-                <li>Cendol</li>
-                <li>Pisang Goreng Cheese</li>
-                <li>Waffle</li>
-                <li>Baklava</li>
-                <li>Kunafa</li>
+                <li>
+                  <img src="/src/image/Apam Balik.png" alt="Apam Balik" width="200" height="200" /> Apam Balik
+                </li>
+                <li>
+                  <img src="/src/image/ABC.png" alt="ABC" width="200" height="200" /> ABC
+                </li>
+                <li>
+                  <img src="/src/image/Cendol.png" alt="Cendol" width="200" height="200" /> Cendol
+                </li>
+                <li>
+                  <img src="/src/image/Pisang Cheese.png" alt="Pisang Goreng Cheese" width="200" height="200" /> Pisang Goreng Cheese
+                </li>
+                <li>
+                  <img src="/src/image/Baklava.png" alt="Baklava" width="200" height="200" /> Baklava
+                </li>
+                <li>
+                  <img src="/src/image/Kunafa.png" alt="Kunafa" width="200" height="200" /> Kunafa
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      &copy; 2024 Mahallah Ali Cafeteria | All Rights Reserved
-    </footer>
+    <footer class="footer"> &copy; 2024 Mahallah Ali Cafeteria | All Rights Reserved </footer>
     <script>
       // Accordion functionality
-      $(document).ready(function () {
-        $('.accordion-header').click(function () {
+      $(document).ready(function() {
+        $('.accordion-header').click(function() {
           const content = $(this).next('.accordion-content');
           $('.accordion-content').not(content).slideUp();
           content.slideToggle();
