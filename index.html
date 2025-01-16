@@ -14,6 +14,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
+    <audio id="welcomeAudio" src="src/welcome.mp3" preload="auto"></audio>
+    <div id="welcome-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&#x2715;</span>
+        <!-- X button inside content -->
+        <h2>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</h2>
+        <p>Thank you for visiting the Mahallah Ali Cafeteria website!<br>May Allah bless us all with success, health, happiness, patience and strength.</p>
+      </div>
+    </div>
+
     <!-- Sidebar Section -->
     <div class="sidebar">
       <div class="logo">
@@ -58,23 +68,22 @@
             </p>
 
             <!-- Opening Hours Section -->
-          <div class="about-text opening-hours">
-            <h2>Opening Hours</h2>
-            <p>Everyday<br />7:30 AM - 11:00 PM</p>
+            <div class="about-text opening-hours">
+              <h2>Opening Hours</h2>
+              <p>Everyday<br />7:30 AM - 11:00 PM</p>
+            </div>
+
+            <!-- Location Section -->
+            <div class="about-text location">
+              <h2>Location</h2>
+              <p>Mahallah Ali, IIUM<br />53100 Kuala Lumpur</p>
+            </div>
           </div>
 
-          <!-- Location Section -->
-          <div class="about-text location">
-            <h2>Location</h2>
-            <p>Mahallah Ali, IIUM<br />53100 Kuala Lumpur</p>
-          </div>
-          </div>
-        
           <!-- Food Images Section -->
           <div class="about-images">
             <img src="src/image/Home Food.png" alt="Delicious Food" />
           </div>
-        </div>
         </div>
       </section>
     </main>
